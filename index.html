@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Магазин Солнцезащитных Очков</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__container">
+      <div class="header__address">г. Москва, ул. Ленина, д. 1</div>
+      <div class="header__logo">
+        <img src="https://i.ibb.co/k683Wg9/image.png" alt="Логотип Магазина" class="logo-image">
+      </div>
+      <div class="header__buttons">
+        <button class="header__button"><i class="bx bx-search"></i></button>
+        <button class="header__button"><i class="bx bx-heart"></i></button>
+        <button class="header__button"><i class="bx bx-cart"></i></button>
+        <button class="header__button"><i class="bx bx-user"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <div class="banner">
+    <h1>Оазис Теней</h1>
+  </div>
+
+  <div class="products">
+    <div class="product">
+      <div class="product-image">
+        <img src="https://i.pinimg.com/564x/e7/9d/d4/e79dd4c2672e836382ed63f09076cc78.jpg" alt="Солнцезащитные очки 1">
+      </div>
+      <h2>Очки леопардовые</h2>
+      
+      <p>1499.99$</p>
+      <button>Купить</button>
+    </div>
+    <div class="product">
+      <div class="product-image">
+        <img src="https://i.pinimg.com/564x/d9/45/03/d94503bce6391554d77b6c7d2b67b40c.jpg" alt="Солнцезащитные очки 2">
+      </div>
+      <h2>Очки узкие</h2>
+      <p>1099.99$</p>
+      <button>Купить</button>
+    </div>
+    <div class="product">
+      <div class="product-image">
+        <img src="https://i.pinimg.com/564x/30/64/c6/3064c62c547806da0b8f995ead2eaca0.jpg" alt="Солнцезащитные очки 3">
+      </div>
+      <h2>Очки авиаторы</h2>
+      <p>1999.99$</p>
+      <button>Купить</button>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <h2>Контакты</h2>
+    <p>Адрес: г. Москва, ул. Ленина, д. 1</p>
+    <p>Телефон: +7 (495) 123-45-67</p>
+    <p>Email: info@example.com</p>
+  </footer>
+
+  <button id="scrollButton" onclick="scrollToTopBottom()">&#8679;</button>
+
+  <script>
+    function scrollToTopBottom() {
+      if (window.scrollY === 0) {
+        window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+      } else {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    }
+  </script>
+</body>
+</html>
